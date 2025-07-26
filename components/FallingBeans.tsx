@@ -91,7 +91,7 @@ function SpilledCoffeeBeans({ isTriggered }: { isTriggered: boolean }) {
           (Math.random() - 0.5) * 0.08
         ] as [number, number, number],
         delay: Math.random() * 2, // Větší rozptyl v časování
-        fallSpeed: 1.5 + Math.random() * 1 // Rychlejší pád
+        fallSpeed: 2.5 + Math.random() * 2 // Rychlejší pád
       })
     }
     return beanData

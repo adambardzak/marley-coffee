@@ -14,7 +14,7 @@ export default function Home() {
   }, []);
 
   // Custom smooth scroll function with slower speed
-  const smoothScrollTo = (elementId: string, duration: number = 2000) => {
+  const smoothScrollTo = (elementId: string, duration: number = 1000) => {
     const targetElement = document.getElementById(elementId);
     if (!targetElement) return;
 
@@ -162,13 +162,13 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
-                onClick={() => smoothScrollTo('lifestyle-section', 2500)}
+                onClick={() => smoothScrollTo('lifestyle-section', 1200)}
                 className="bg-jamaican-gold hover:bg-jamaican-gold/90 text-coffee-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
               >
                 Objevte Naší Kávu
               </button>
               <button 
-                onClick={() => smoothScrollTo('about-section', 2000)}
+                onClick={() => smoothScrollTo('about-section', 1000)}
                 className="border-2 border-coffee-100 text-coffee-100 hover:bg-coffee-100 hover:text-coffee-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300"
               >
                 Náš Příběh

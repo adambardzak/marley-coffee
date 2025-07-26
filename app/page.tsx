@@ -5,6 +5,7 @@ import FallingBeans from '../components/FallingBeans';
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -41,10 +42,97 @@ export default function Home() {
     requestAnimationFrame(animation);
   };
 
+  const navItems = [
+    { name: 'Domů', href: '#', onClick: () => window.scrollTo({ top: 0, behavior: 'smooth' }) },
+    { name: 'Náš Příběh', href: '#about-section', onClick: () => smoothScrollTo('about-section') },
+    { name: 'Kvalita', href: '#quality-section', onClick: () => smoothScrollTo('quality-section') },
+    { name: 'Etika & Zdraví', href: '#ethics-section', onClick: () => smoothScrollTo('ethics-section') },
+    { name: 'Životní Styl', href: '#lifestyle-section', onClick: () => smoothScrollTo('lifestyle-section') },
+  ];
+
   console.log("Marley Coffee page loaded, scroll position:", scrollY);
 
   return (
     <div className="bg-coffee-50 text-coffee-800">
+      {/* Navigation */}
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${
+        scrollY > 50 
+          ? 'bg-coffee-900/95 backdrop-blur-md shadow-lg' 
+          : 'bg-transparent'
+      }`}>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20">
+            {/* Logo */}
+            <div className="flex items-center">
+              <div className="font-playfair text-2xl font-bold text-jamaican-gold">
+                Marley Coffee
+              </div>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-8">
+              {navItems.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={item.onClick}
+                  className="text-coffee-100 hover:text-jamaican-gold transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </button>
+              ))}
+            </div>
+
+            {/* CTA Button */}
+            <div className="hidden md:flex items-center">
+              <button className="bg-jamaican-gold hover:bg-jamaican-gold/90 text-coffee-900 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105">
+                Koupit Kávu
+              </button>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-coffee-100 hover:text-jamaican-gold"
+              >
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  {isMenuOpen ? (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  )}
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <div className="md:hidden bg-coffee-900/95 backdrop-blur-md">
+              <div className="px-2 pt-2 pb-3 space-y-1">
+                {navItems.map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => {
+                      item.onClick();
+                      setIsMenuOpen(false);
+                    }}
+                    className="block w-full text-left px-3 py-2 text-coffee-100 hover:text-jamaican-gold transition-colors duration-200"
+                  >
+                    {item.name}
+                  </button>
+                ))}
+                <div className="px-3 py-2">
+                  <button className="w-full bg-jamaican-gold hover:bg-jamaican-gold/90 text-coffee-900 px-6 py-3 rounded-full font-semibold transition-all duration-300">
+                    Koupit Kávu
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -125,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* Coffee Quality Section */}
-      <section className="py-20 lg:py-32 bg-coffee-900 text-coffee-50">
+      <section id="quality-section" className="py-20 lg:py-32 bg-coffee-900 text-coffee-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-playfair text-4xl lg:text-5xl font-bold mb-6" data-macaly="quality-heading">
@@ -226,7 +314,7 @@ export default function Home() {
       </section>
 
       {/* Health & Ethics Section */}
-      <section className="py-20 lg:py-32">
+      <section id="ethics-section" className="py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>

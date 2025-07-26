@@ -150,10 +150,10 @@ export default function Home() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl">
-            <h1 className="font-playfair text-5xl lg:text-7xl font-bold text-coffee-50 mb-2 leading-tight" data-macaly="hero-title">
+            <h1 className="bebas-neue-regular text-5xl lg:text-7xl font-bold text-coffee-50 mb-1 leading-tight" data-macaly="hero-title">
               Marley Coffee
             </h1>
-            <h2 className="font-playfair text-2xl lg:text-3xl font-semibold text-jamaican-gold mb-8 leading-tight" data-macaly="hero-subtitle-heading">
+            <h2 className="bebas-neue-regular text-2xl lg:text-3xl font-semibold text-jamaican-gold mb-6 leading-tight" data-macaly="hero-subtitle-heading">
               Káva, která Vás chytne za srdce.
             </h2>
             <p className="text-xl lg:text-2xl text-coffee-100 mb-8 font-light leading-relaxed" data-macaly="hero-subtitle">
@@ -190,7 +190,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-1 gap-16 items-center justify-center">
             <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl max-w-4xl mx-auto">
-              <h2 className="font-playfair text-4xl lg:text-5xl font-bold mb-8 text-coffee-900 text-center" data-macaly="about-heading">
+              <h2 className="bebas-neue-regular text-4xl lg:text-5xl font-bold mb-4 text-coffee-900 text-center" data-macaly="about-heading">
                 Uctívání <span className="text-jamaican-gold">Odkazu</span>
               </h2>
               <div className="prose prose-lg text-coffee-700 space-y-6">
@@ -218,7 +218,7 @@ export default function Home() {
       <section id="quality-section" className="py-20 lg:py-32 bg-coffee-900 text-coffee-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="font-playfair text-4xl lg:text-5xl font-bold mb-6" data-macaly="quality-heading">
+            <h2 className="bebas-neue-regular text-4xl lg:text-5xl font-bold mb-3" data-macaly="quality-heading">
               Výjimečný <span className="text-jamaican-gold">Chuťový Profil</span>
             </h2>
             <p className="text-xl text-coffee-100 max-w-3xl mx-auto leading-relaxed" data-macaly="quality-description">
@@ -234,7 +234,7 @@ export default function Home() {
                 <div className="inline-block px-4 py-2 bg-jamaican-gold/20 rounded-full text-jamaican-gold text-sm font-semibold mb-4">
                   CHUŤOVÉ TÓNY
                 </div>
-                <h3 className="font-playfair text-3xl lg:text-4xl font-bold mb-6 text-jamaican-gold" data-macaly="taste-blueberry-title">
+                <h3 className="bebas-neue-regular text-3xl lg:text-4xl font-bold mb-6 text-jamaican-gold" data-macaly="taste-blueberry-title">
                   Divoké Borůvky
                 </h3>
                 <p className="text-lg text-coffee-100 leading-relaxed mb-6" data-macaly="taste-blueberry-description">
@@ -270,7 +270,7 @@ export default function Home() {
                 <div className="inline-block px-4 py-2 bg-jamaican-gold/20 rounded-full text-jamaican-gold text-sm font-semibold mb-4">
                   ČOKOLÁDOVÉ PODTÓNY
                 </div>
-                <h3 className="font-playfair text-3xl lg:text-4xl font-bold mb-6 text-jamaican-gold" data-macaly="taste-cacao-title">
+                <h3 className="bebas-neue-regular text-3xl lg:text-4xl font-bold mb-6 text-jamaican-gold" data-macaly="taste-cacao-title">
                   Bohaté Kakao
                 </h3>
                 <p className="text-lg text-coffee-100 leading-relaxed mb-6" data-macaly="taste-cacao-description">
@@ -290,7 +290,7 @@ export default function Home() {
                 <div className="inline-block px-4 py-2 bg-jamaican-gold/20 rounded-full text-jamaican-gold text-sm font-semibold mb-4">
                   JAMAJSKÉ DĚDICTVÍ
                 </div>
-                <h3 className="font-playfair text-3xl lg:text-4xl font-bold mb-6 text-jamaican-gold" data-macaly="taste-spices-title">
+                <h3 className="bebas-neue-regular text-3xl lg:text-4xl font-bold mb-6 text-jamaican-gold" data-macaly="taste-spices-title">
                   Ostrovní Koření
                 </h3>
                 <p className="text-lg text-coffee-100 leading-relaxed mb-6" data-macaly="taste-spices-description">
@@ -320,7 +320,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="font-playfair text-4xl lg:text-5xl font-bold mb-8 text-coffee-900" data-macaly="ethics-heading">
+              <h2 className="bebas-neue-regular text-4xl lg:text-5xl font-bold mb-4 text-coffee-900" data-macaly="ethics-heading">
                 Čistá. <span className="text-jamaican-green">Organická.</span> <span className="text-jamaican-gold">Férová.</span>
               </h2>
               <div className="space-y-6">
@@ -370,7 +370,7 @@ export default function Home() {
                 data-macaly="ethics-farming-image"
               />
               <div className="absolute -bottom-8 -right-8 bg-jamaican-gold text-coffee-900 p-6 rounded-2xl shadow-xl">
-                <div className="font-playfair text-3xl font-bold">1978</div>
+                <div className="bebas-neue-regular text-3xl font-bold">1978</div>
                 <div className="text-sm">Farmářské Dědictví</div>
               </div>
             </div>
@@ -382,7 +382,7 @@ export default function Home() {
       <section id="lifestyle-section" className="py-20 bg-gradient-to-br from-coffee-100 to-coffee-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-4xl lg:text-5xl font-bold mb-6 text-coffee-900" data-macaly="lifestyle-heading">
+            <h2 className="bebas-neue-regular text-4xl lg:text-5xl font-bold mb-3 text-coffee-900" data-macaly="lifestyle-heading">
               Káva pro <span className="text-jamaican-gold">Vědomou Duši</span>
             </h2>
             <p className="text-xl text-coffee-700 max-w-3xl mx-auto" data-macaly="lifestyle-description">
@@ -403,7 +403,7 @@ export default function Home() {
             
             <div className="space-y-8">
               <div>
-                <h3 className="font-playfair text-2xl font-bold mb-4 text-coffee-900" data-macaly="slow-living-title">Pomalý Život, Bohatá Chuť</h3>
+                <h3 className="bebas-neue-regular text-2xl font-bold mb-4 text-coffee-900" data-macaly="slow-living-title">Pomalý Život, Bohatá Chuť</h3>
                 <p className="text-coffee-700 leading-relaxed" data-macaly="slow-living-description">
                   Ve světě, který se pohybuje příliš rychle, vás Marley Coffee zve k pozastavení. Každý šálek je 
                   pozvánkou k nadechnutí, zamyšlení a opětovnému spojení s tím, na čem nejvíce záleží.
@@ -411,7 +411,7 @@ export default function Home() {
               </div>
               
               <div>
-                <h3 className="font-playfair text-2xl font-bold mb-4 text-coffee-900" data-macaly="reggae-spirit-title">Reggae Duch, Kávové Srdce</h3>
+                <h3 className="bebas-neue-regular text-2xl font-bold mb-4 text-coffee-900" data-macaly="reggae-spirit-title">Reggae Duch, Kávové Srdce</h3>
                 <p className="text-coffee-700 leading-relaxed" data-macaly="reggae-spirit-description">
                   Jako hudba, která proudí ze srdce Jamajky, naše káva nese rytmus, duši 
                   a sílu spojovat lidi kolem sdílených hodnot míru a jednoty.
@@ -427,7 +427,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="md:col-span-2">
-              <div className="font-playfair text-3xl font-bold text-jamaican-gold mb-4" data-macaly="footer-logo">
+              <div className="bebas-neue-regular text-3xl font-bold text-jamaican-gold mb-4" data-macaly="footer-logo">
                 Marley Coffee
               </div>
               <p className="text-coffee-200 mb-6 max-w-md" data-macaly="footer-description">
@@ -445,7 +445,7 @@ export default function Home() {
             </div>
             
             <div>
-              <h4 className="font-playfair text-xl font-bold mb-4 text-jamaican-gold" data-macaly="footer-coffee-title">Káva</h4>
+              <h4 className="bebas-neue-regular text-xl font-bold mb-4 text-jamaican-gold" data-macaly="footer-coffee-title">Káva</h4>
               <ul className="space-y-2 text-coffee-200">
                 <li><a href="#" className="hover:text-jamaican-gold transition-colors">Blue Mountain Směs</a></li>
                 <li><a href="#" className="hover:text-jamaican-gold transition-colors">Organická Tmavá Pražka</a></li>
@@ -455,7 +455,7 @@ export default function Home() {
             </div>
             
             <div>
-              <h4 className="font-playfair text-xl font-bold mb-4 text-jamaican-gold" data-macaly="footer-company-title">Společnost</h4>
+              <h4 className="bebas-neue-regular text-xl font-bold mb-4 text-jamaican-gold" data-macaly="footer-company-title">Společnost</h4>
               <ul className="space-y-2 text-coffee-200">
                 <li><a href="#" className="hover:text-jamaican-gold transition-colors">Náš Příběh</a></li>
                 <li><a href="#" className="hover:text-jamaican-gold transition-colors">Udržitelnost</a></li>

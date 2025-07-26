@@ -10,7 +10,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'playfair': ['var(--font-playfair)', 'serif'],
+        sans: ['Inter', 'sans-serif'],
+        'playfair': ['var(--font-playfair)', 'Playfair Display', 'serif'],
+        'bebas': ['var(--font-bebas-neue)', 'Bebas Neue', 'sans-serif'],
       },
       colors: {
         'coffee': {

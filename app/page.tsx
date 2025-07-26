@@ -64,9 +64,11 @@ export default function Home() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="font-playfair text-2xl font-bold text-jamaican-gold">
-                Marley Coffee
-              </div>
+              <img 
+                src="/marley-coffee-logo.png" 
+                alt="Marley Coffee" 
+                className="h-16 w-auto brightness-[350%] contrast-100"
+              />
             </div>
 
             {/* Desktop Navigation */}
